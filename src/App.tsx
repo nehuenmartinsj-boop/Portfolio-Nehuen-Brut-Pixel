@@ -127,6 +127,7 @@ const ProjectScreenshotStack = ({ title, images }: { title: string; images: stri
                 src={src} 
                 alt={`${title} screenshot ${i}`}
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-2 right-2 bg-ink text-bg font-mono text-[8px] px-1 py-0.5">
                 VER.0{i+1}
@@ -172,6 +173,7 @@ const ProjectScreenshotStack = ({ title, images }: { title: string; images: stri
                     src={src} 
                     alt="" 
                     className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
+                    referrerPolicy="no-referrer"
                   />
                   <div className="flex justify-between items-center mt-4 px-2">
                     <span className="font-mono text-[10px] opacity-40 uppercase">Captura de Transmisión // 0{i+1}</span>
@@ -206,12 +208,12 @@ const ProjectScreenshotStack = ({ title, images }: { title: string; images: stri
 const ProjectGallery = () => {
   const projects = [
     {
-      title: "SISTEMA DE GESTIÓN // RETAIL",
+      title: "OSORNO WASH // AUTOLAVADO",
       images: [
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80&w=800"
+        "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1621905252507-b352175d2f20?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1601362840469-51e4d8d59085?auto=format&fit=crop&q=80&w=1200"
       ]
     },
     {
