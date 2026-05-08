@@ -435,8 +435,7 @@ export default function App() {
         <nav className="hidden md:flex gap-10 font-mono text-base uppercase tracking-widest items-center font-light">
           <a href="#work" className="hover:text-accent transition-colors">Sistemas</a>
           <a href="#about" className="hover:text-accent transition-colors">Estrategia</a>
-          <a href="#gallery" className="hover:text-accent transition-colors">Showcase</a>
-          <a href="#contact" className="hover:text-accent transition-colors">Protocolo</a>
+          <a href="#gallery" className="hover:text-accent transition-colors">Trabajos</a>
           <a href="#contact" className="pixel-button !text-base">Colaborar</a>
         </nav>
 
@@ -455,17 +454,17 @@ export default function App() {
             className="flex flex-col items-center gap-4 w-full max-w-5xl"
           >
             <motion.div variants={slamVariants} className="flex flex-col gap-6 md:gap-10 items-center w-full">
-              <h1 className="text-[10vw] sm:text-[9vw] md:text-[80px] lg:text-[100px] leading-none tracking-tighter font-bold uppercase text-center w-full break-words">
+              <h1 className="text-[23px] md:text-[70px] leading-none tracking-tighter font-bold uppercase text-center w-full break-words">
                 DISEÑADOR
               </h1>
               <div className="flex items-center justify-center gap-2 md:gap-10 w-full flex-wrap">
                 <PixelSmiley size={20} className="md:w-12 md:h-12 shrink-0 md:block" />
-                <h1 className="text-[10vw] sm:text-[9vw] md:text-[80px] lg:text-[100px] leading-none tracking-tighter font-bold uppercase text-center break-words">
+                <h1 className="text-[23px] md:text-[70px] leading-none tracking-tighter font-bold uppercase text-center break-words">
                   NEHUEN
                 </h1>
                 <PixelSmiley size={20} className="md:w-12 md:h-12 shrink-0 md:block" />
               </div>
-              <h1 className="text-[10vw] sm:text-[9vw] md:text-[80px] lg:text-[100px] leading-none text-accent tracking-tighter uppercase text-center w-full break-words">
+              <h1 className="text-[23px] md:text-[70px] leading-none text-accent tracking-tighter uppercase text-center w-full break-words">
                 DESARROLLADOR
               </h1>
             </motion.div>
@@ -505,33 +504,33 @@ export default function App() {
           <SectionHeading number="01" title="SOLUCIONES FUNCIONALES" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard 
-              title="SEO GROWTH ENGINE" 
+              title="MOTOR DE CRECIMIENTO SEO" 
               tags={["SEO", "Vite", "JS"]}
               description="Optimización estructural y funnel de captación de leads con integración de Google Sheets para gestión automática de contactos."
             />
             <ProjectCard 
-              title="SALES FUNNEL PRO" 
+              title="FUNNEL DE VENTAS PRO" 
               tags={["Funnel", "React", "Forms"]}
               description="Embudo de ventas diseñado para máxima conversión, con seguimiento de métricas y automatización de respuestas."
             />
             <ProjectCard 
-              title="DATA DASHBOARD" 
+              title="TABLERO DE DATOS" 
               tags={["Python", "Sheets", "D3"]}
               description="Visualización interactiva de KPIs de negocio, conectada directamente a tu Google Sheets para reportes en tiempo real."
             />
              <ProjectCard 
-              title="CLOUD ECOSYSTEM" 
+              title="ECOSISTEMA CLOUD" 
               tags={["Firebase", "Stitch", "Auth"]}
               description="Infraestructura completa en Google Cloud, integrando múltiples servicios para una gestión centralizada y segura."
             />
             <ProjectCard 
-              title="HIGH CONV LANDING" 
+              title="LANDING DE ALTA CONVERSIÓN" 
               tags={["CTA", "SEO", "React"]}
               description="Draft de landing page enfocada 100% en el usuario final, con CTAs claros y optimizada para buscadores."
             />
             <ProjectCard 
               title="SISTEMA DE GESTIÓN" 
-              tags={["Python", "Automation"]}
+              tags={["Python", "Automatización"]}
               description="Automatización de procesos internos utilizando Python y herramientas de Google para ahorrar horas de trabajo manual."
             />
           </div>
