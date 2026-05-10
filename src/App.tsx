@@ -154,7 +154,7 @@ const ProjectScreenshotStack = ({ title, images }: { title: string; images: stri
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               className="max-w-3xl mx-auto flex flex-col gap-12 py-24"
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e: MouseEvent) => e.stopPropagation()}
             >
               <div className="flex flex-col items-center gap-4 mb-8">
                 <h2 className="font-mono text-xl uppercase tracking-widest text-ink">{title}</h2>
