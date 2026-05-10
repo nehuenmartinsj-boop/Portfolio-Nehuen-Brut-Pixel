@@ -208,30 +208,47 @@ const ProjectScreenshotStack = ({ title, images }: { title: string; images: stri
 const ProjectGallery = () => {
   const projects = [
     {
-      title: "OSORNO WASH // AUTOLAVADO",
+      title: "BRILLO SUREÑO // AUTOLAVADO",
       images: [
-        "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=1200",
-        "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=1200",
-        "https://images.unsplash.com/photo-1621905252507-b352175d2f20?auto=format&fit=crop&q=80&w=1200",
-        "https://images.unsplash.com/photo-1601362840469-51e4d8d59085?auto=format&fit=crop&q=80&w=1200"
+        "/img/OsornoWash/Screenshot%202026-05-07%20at%2023-08-32%20Brillo%20Sure%C3%B1o%20-%20Autolavado%20Oso%20Google%20AI%20Studio.png",
+        "/img/OsornoWash/Screenshot%202026-05-07%20at%2023-09-50%20Brillo%20Sure%C3%B1o%20-%20Autolavado%20Oso%20Google%20AI%20Studio.png",
+        "/img/OsornoWash/Screenshot%202026-05-07%20at%2023-10-10%20Brillo%20Sure%C3%B1o%20-%20Autolavado%20Oso%20Google%20AI%20Studio.png"
       ]
     },
     {
-      title: "E-COMMERCE // FUNNEL OPTIMIZADO",
+      title: "DENTAL ELITE // CLÍNICA DENTAL",
       images: [
-        "https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1454165833767-027eeea15c3e?auto=format&fit=crop&q=80&w=800"
+        "/img/DentalElite/Screenshot%202026-05-07%20at%2023-15-38%20Cl%C3%ADnica%20Dental%20Osorno%20-%20Elite%20Google%20AI%20Studio.png",
+        "/img/DentalElite/Screenshot%202026-05-07%20at%2023-15-51%20Cl%C3%ADnica%20Dental%20Osorno%20-%20Elite%20Google%20AI%20Studio.png",
+        "/img/DentalElite/Screenshot%202026-05-07%20at%2023-16-10%20Cl%C3%ADnica%20Dental%20Osorno%20-%20Elite%20Google%20AI%20Studio.png",
+        "/img/DentalElite/Screenshot%202026-05-07%20at%2023-16-22%20Cl%C3%ADnica%20Dental%20Osorno%20-%20Elite%20Google%20AI%20Studio.png"
       ]
     },
     {
-      title: "DASHBOARD // ANALÍTICA REALTIME",
+      title: "AXIS MODULAR // ARQUITECTURA",
       images: [
-        "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
+        "/img/AxisModular/Screenshot%202026-05-07%20at%2023-18-55%20AXIS%20Modular%20Google%20AI%20Studio.png",
+        "/img/AxisModular/Screenshot%202026-05-07%20at%2023-19-07%20AXIS%20Modular%20Google%20AI%20Studio.png",
+        "/img/AxisModular/Screenshot%202026-05-07%20at%2023-19-29%20AXIS%20Modular%20Google%20AI%20Studio.png",
+        "/img/AxisModular/Screenshot%202026-05-07%20at%2023-19-41%20AXIS%20Modular%20Google%20AI%20Studio.png"
+      ]
+    },
+    {
+      title: "VETORA // CUIDADO HOLÍSTICO",
+      images: [
+        "/img/Vetora/Screenshot%202026-05-07%20at%2023-21-38%20Vetora%20Cuidado%20Hol%C3%ADstico%20Google%20AI%20Studio.png",
+        "/img/Vetora/Screenshot%202026-05-07%20at%2023-21-45%20Vetora%20Cuidado%20Hol%C3%ADstico%20Google%20AI%20Studio.png",
+        "/img/Vetora/Screenshot%202026-05-07%20at%2023-21-53%20Vetora%20Cuidado%20Hol%C3%ADstico%20Google%20AI%20Studio.png",
+        "/img/Vetora/Screenshot%202026-05-07%20at%2023-22-15%20Vetora%20Cuidado%20Hol%C3%ADstico%20Google%20AI%20Studio.png"
+      ]
+    },
+    {
+      title: "LAGO RANCO // TURISMO",
+      images: [
+        "/img/LagoRanco/Screenshot%202026-05-07%20at%2023-25-14%20Lago%20Ranco%202026%20Google%20AI%20Studio.png",
+        "/img/LagoRanco/Screenshot%202026-05-07%20at%2023-25-46%20Lago%20Ranco%202026%20Google%20AI%20Studio.png",
+        "/img/LagoRanco/Screenshot%202026-05-07%20at%2023-26-00%20Lago%20Ranco%202026%20Google%20AI%20Studio.png",
+        "/img/LagoRanco/Screenshot%202026-05-07%20at%2023-26-11%20Lago%20Ranco%202026%20Google%20AI%20Studio.png"
       ]
     }
   ];
@@ -506,29 +523,29 @@ export default function App() {
           <SectionHeading number="01" title="SOLUCIONES FUNCIONALES" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard 
-              title="MOTOR DE CRECIMIENTO SEO" 
-              tags={["SEO", "Vite", "JS"]}
-              description="Optimización estructural y funnel de captación de leads con integración de Google Sheets para gestión automática de contactos."
+              title="BRILLO SUREÑO // AUTOLAVADO" 
+              tags={["Web", "SEO", "Vite"]}
+              description="Plataforma para autolavado con enfoque en conversión y optimización SEO local para captación de clientes."
             />
             <ProjectCard 
-              title="FUNNEL DE VENTAS PRO" 
-              tags={["Funnel", "React", "Forms"]}
-              description="Embudo de ventas diseñado para máxima conversión, con seguimiento de métricas y automatización de respuestas."
+              title="DENTAL ELITE // CLÍNICA" 
+              tags={["Health", "React", "Forms"]}
+              description="Sistema de gestión y aterrizaje para clínica dental, optimizado para agendamiento y retención de pacientes."
             />
             <ProjectCard 
-              title="TABLERO DE DATOS" 
-              tags={["Python", "Sheets", "D3"]}
-              description="Visualización interactiva de KPIs de negocio, conectada directamente a tu Google Sheets para reportes en tiempo real."
+              title="AXIS MODULAR // ARQUITECTURA" 
+              tags={["B2B", "Portfolio", "Design"]}
+              description="Catálogo digital de estructuras modulares con visualización de alta calidad y funnel de presupuesto."
             />
              <ProjectCard 
-              title="ECOSISTEMA CLOUD" 
-              tags={["Firebase", "Stitch", "Auth"]}
-              description="Infraestructura completa en Google Cloud, integrando múltiples servicios para una gestión centralizada y segura."
+              title="VETORA // CUIDADO HOLÍSTICO" 
+              tags={["Wellness", "Landing", "SEO"]}
+              description="Ecosistema digital para servicios de salud holística, integrando blog y captación de leads estratégicos."
             />
             <ProjectCard 
-              title="LANDING DE ALTA CONVERSIÓN" 
-              tags={["CTA", "SEO", "React"]}
-              description="Draft de landing page enfocada 100% en el usuario final, con CTAs claros y optimizada para buscadores."
+              title="LAGO RANCO // TURISMO" 
+              tags={["Travel", "Landing", "UX"]}
+              description="Landing page de alto impacto para destino turístico, enfocada en la experiencia visual y conversión directa."
             />
             <ProjectCard 
               title="SISTEMA DE GESTIÓN" 
