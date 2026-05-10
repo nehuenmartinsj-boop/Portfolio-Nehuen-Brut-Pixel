@@ -89,7 +89,7 @@ const ProjectCard = ({ title, tags, description }: { title: string; tags: string
   );
 };
 
-const ProjectScreenshotStack = ({ title, images }: { title: string; images: string[]; key?: any }) => {
+const ProjectScreenshotStack = ({ title, images }: { title: string; images: string[] }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Lock body scroll when open
@@ -130,7 +130,7 @@ const ProjectScreenshotStack = ({ title, images }: { title: string; images: stri
                 referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-2 right-2 bg-ink text-bg font-mono text-[8px] px-1 py-0.5">
-                VER.0{i+1}
+                VER.0{i + 1}
               </div>
             </div>
           </motion.div>
@@ -176,7 +176,7 @@ const ProjectScreenshotStack = ({ title, images }: { title: string; images: stri
                     referrerPolicy="no-referrer"
                   />
                   <div className="flex justify-between items-center mt-4 px-2">
-                    <span className="font-mono text-[10px] opacity-40 uppercase">Captura de Transmisión // 0{i+1}</span>
+                    <span className="font-mono text-[10px] opacity-40 uppercase">Captura de Transmisión // 0{i + 1}</span>
                     <span className="font-mono text-[10px] text-accent uppercase">OK.STATUS</span>
                   </div>
                 </motion.div>
@@ -210,45 +210,45 @@ const ProjectGallery = () => {
     {
       title: "BRILLO SUREÑO // AUTOLAVADO",
       images: [
-        "/img/OsornoWash/Screenshot%202026-05-07%20at%2023-08-32%20Brillo%20Sure%C3%B1o%20-%20Autolavado%20Oso%20Google%20AI%20Studio.png",
-        "/img/OsornoWash/Screenshot%202026-05-07%20at%2023-09-50%20Brillo%20Sure%C3%B1o%20-%20Autolavado%20Oso%20Google%20AI%20Studio.png",
-        "/img/OsornoWash/Screenshot%202026-05-07%20at%2023-10-10%20Brillo%20Sure%C3%B1o%20-%20Autolavado%20Oso%20Google%20AI%20Studio.png"
+        "/img/OsornoWash/Screenshot 2026-05-07 at 23-08-32 Brillo Sureño - Autolavado Oso Google AI Studio.png",
+        "/img/OsornoWash/Screenshot 2026-05-07 at 23-09-50 Brillo Sureño - Autolavado Oso Google AI Studio.png",
+        "/img/OsornoWash/Screenshot 2026-05-07 at 23-10-10 Brillo Sureño - Autolavado Oso Google AI Studio.png"
       ]
     },
     {
       title: "DENTAL ELITE // CLÍNICA DENTAL",
       images: [
-        "/img/DentalElite/Screenshot%202026-05-07%20at%2023-15-38%20Cl%C3%ADnica%20Dental%20Osorno%20-%20Elite%20Google%20AI%20Studio.png",
-        "/img/DentalElite/Screenshot%202026-05-07%20at%2023-15-51%20Cl%C3%ADnica%20Dental%20Osorno%20-%20Elite%20Google%20AI%20Studio.png",
-        "/img/DentalElite/Screenshot%202026-05-07%20at%2023-16-10%20Cl%C3%ADnica%20Dental%20Osorno%20-%20Elite%20Google%20AI%20Studio.png",
-        "/img/DentalElite/Screenshot%202026-05-07%20at%2023-16-22%20Cl%C3%ADnica%20Dental%20Osorno%20-%20Elite%20Google%20AI%20Studio.png"
+        "/img/DentalElite/Screenshot 2026-05-07 at 23-15-38 Clínica Dental Osorno - Elite Google AI Studio.png",
+        "/img/DentalElite/Screenshot 2026-05-07 at 23-15-51 Clínica Dental Osorno - Elite Google AI Studio.png",
+        "/img/DentalElite/Screenshot 2026-05-07 at 23-16-10 Clínica Dental Osorno - Elite Google AI Studio.png",
+        "/img/DentalElite/Screenshot 2026-05-07 at 23-16-22 Clínica Dental Osorno - Elite Google AI Studio.png"
       ]
     },
     {
       title: "AXIS MODULAR // ARQUITECTURA",
       images: [
-        "/img/AxisModular/Screenshot%202026-05-07%20at%2023-18-55%20AXIS%20Modular%20Google%20AI%20Studio.png",
-        "/img/AxisModular/Screenshot%202026-05-07%20at%2023-19-07%20AXIS%20Modular%20Google%20AI%20Studio.png",
-        "/img/AxisModular/Screenshot%202026-05-07%20at%2023-19-29%20AXIS%20Modular%20Google%20AI%20Studio.png",
-        "/img/AxisModular/Screenshot%202026-05-07%20at%2023-19-41%20AXIS%20Modular%20Google%20AI%20Studio.png"
+        "/img/AxisModular/Screenshot 2026-05-07 at 23-18-55 AXIS Modular Google AI Studio.png",
+        "/img/AxisModular/Screenshot 2026-05-07 at 23-19-07 AXIS Modular Google AI Studio.png",
+        "/img/AxisModular/Screenshot 2026-05-07 at 23-19-29 AXIS Modular Google AI Studio.png",
+        "/img/AxisModular/Screenshot 2026-05-07 at 23-19-41 AXIS Modular Google AI Studio.png"
       ]
     },
     {
       title: "VETORA // CUIDADO HOLÍSTICO",
       images: [
-        "/img/Vetora/Screenshot%202026-05-07%20at%2023-21-38%20Vetora%20Cuidado%20Hol%C3%ADstico%20Google%20AI%20Studio.png",
-        "/img/Vetora/Screenshot%202026-05-07%20at%2023-21-45%20Vetora%20Cuidado%20Hol%C3%ADstico%20Google%20AI%20Studio.png",
-        "/img/Vetora/Screenshot%202026-05-07%20at%2023-21-53%20Vetora%20Cuidado%20Hol%C3%ADstico%20Google%20AI%20Studio.png",
-        "/img/Vetora/Screenshot%202026-05-07%20at%2023-22-15%20Vetora%20Cuidado%20Hol%C3%ADstico%20Google%20AI%20Studio.png"
+        "/img/Vetora/Screenshot 2026-05-07 at 23-21-38 Vetora Cuidado Holístico Google AI Studio.png",
+        "/img/Vetora/Screenshot 2026-05-07 at 23-21-45 Vetora Cuidado Holístico Google AI Studio.png",
+        "/img/Vetora/Screenshot 2026-05-07 at 23-21-53 Vetora Cuidado Holístico Google AI Studio.png",
+        "/img/Vetora/Screenshot 2026-05-07 at 23-22-15 Vetora Cuidado Holístico Google AI Studio.png"
       ]
     },
     {
       title: "LAGO RANCO // TURISMO",
       images: [
-        "/img/LagoRanco/Screenshot%202026-05-07%20at%2023-25-14%20Lago%20Ranco%202026%20Google%20AI%20Studio.png",
-        "/img/LagoRanco/Screenshot%202026-05-07%20at%2023-25-46%20Lago%20Ranco%202026%20Google%20AI%20Studio.png",
-        "/img/LagoRanco/Screenshot%202026-05-07%20at%2023-26-00%20Lago%20Ranco%202026%20Google%20AI%20Studio.png",
-        "/img/LagoRanco/Screenshot%202026-05-07%20at%2023-26-11%20Lago%20Ranco%202026%20Google%20AI%20Studio.png"
+        "/img/LagoRanco/Screenshot 2026-05-07 at 23-25-14 Lago Ranco 2026 Google AI Studio.png",
+        "/img/LagoRanco/Screenshot 2026-05-07 at 23-25-46 Lago Ranco 2026 Google AI Studio.png",
+        "/img/LagoRanco/Screenshot 2026-05-07 at 23-26-00 Lago Ranco 2026 Google AI Studio.png",
+        "/img/LagoRanco/Screenshot 2026-05-07 at 23-26-11 Lago Ranco 2026 Google AI Studio.png"
       ]
     }
   ];
