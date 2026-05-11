@@ -106,7 +106,7 @@ const ProjectScreenshotStack = ({ title, images }: { title: string; images: stri
     <div className="py-20 flex flex-col items-center">
       <h3 className="font-mono text-sm uppercase opacity-40 mb-12 tracking-[0.2em]">{title}</h3>
       <div 
-        className="relative cursor-pointer w-full max-w-[200px] h-[280px] md:max-w-[320px] md:h-[420px] group"
+        className="relative cursor-pointer w-full max-w-[140px] h-[180px] md:max-w-[220px] md:h-[300px] group"
         onClick={() => setIsOpen(true)}
       >
         {images.map((src, i) => (
@@ -256,7 +256,7 @@ const ProjectGallery = () => {
   return (
     <section id="gallery" className="scroll-mt-32 max-w-7xl mx-auto mb-40 px-6 overflow-hidden">
       <SectionHeading number="03" title="SHOWCASE DE TRANSMISIÓN" />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
         {projects.map((p, idx) => (
           <div key={idx} className={idx === 4 ? "md:col-start-2" : ""}>
             <ProjectScreenshotStack title={p.title} images={p.images} />
