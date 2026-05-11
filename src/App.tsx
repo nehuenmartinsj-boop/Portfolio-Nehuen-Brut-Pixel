@@ -256,9 +256,11 @@ const ProjectGallery = () => {
   return (
     <section id="gallery" className="scroll-mt-32 max-w-7xl mx-auto mb-40 px-6 overflow-hidden">
       <SectionHeading number="03" title="SHOWCASE DE TRANSMISIÓN" />
-      <div className="flex flex-col gap-32">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
         {projects.map((p, idx) => (
-          <ProjectScreenshotStack key={idx} title={p.title} images={p.images} />
+          <div key={idx} className={idx === 4 ? "md:col-start-2" : ""}>
+            <ProjectScreenshotStack title={p.title} images={p.images} />
+          </div>
         ))}
       </div>
     </section>
