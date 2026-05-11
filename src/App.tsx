@@ -233,6 +233,23 @@ const ProjectGallery = () => {
         "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80&w=800",
         "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
       ]
+    },
+    {
+      title: "VETORA // CUIDADO HOLÍSTICO",
+      images: [
+        "/doc/Vetora/Screenshot 2026-05-07 at 23-21-38 Vetora Cuidado Holístico Google AI Studio.png",
+        "/doc/Vetora/Screenshot 2026-05-07 at 23-21-45 Vetora Cuidado Holístico Google AI Studio.png",
+        "/doc/Vetora/Screenshot 2026-05-07 at 23-21-53 Vetora Cuidado Holístico Google AI Studio.png",
+        "/doc/Vetora/Screenshot 2026-05-07 at 23-22-15 Vetora Cuidado Holístico Google AI Studio.png"
+      ]
+    },
+    {
+      title: "BRILLO SUREÑO // AUTOLAVADO OSORNO",
+      images: [
+        "/doc/OsornoWash/Screenshot 2026-05-07 at 23-08-32 Brillo Sureño - Autolavado Oso Google AI Studio.png",
+        "/doc/OsornoWash/Screenshot 2026-05-07 at 23-09-50 Brillo Sureño - Autolavado Oso Google AI Studio.png",
+        "/doc/OsornoWash/Screenshot 2026-05-07 at 23-10-10 Brillo Sureño - Autolavado Oso Google AI Studio.png"
+      ]
     }
   ];
 
