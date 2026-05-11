@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { motion, useMotionValue, useTransform, useSpring, AnimatePresence, Variants } from 'motion/react';
+import { motion, useMotionValue, useTransform, useSpring, AnimatePresence } from 'motion/react';
 import { Menu, ArrowRight, Github, Twitter, Linkedin, ExternalLink, Mail, X } from 'lucide-react';
 import { useState, useEffect, FormEvent, useRef, MouseEvent } from 'react';
 
@@ -208,30 +208,30 @@ const ProjectScreenshotStack = ({ title, images }: { title: string; images: stri
 const ProjectGallery = () => {
   const projects = [
     {
-      title: "DENTAL ELITE // CLÍNICA DENTAL",
+      title: "OSORNO WASH // AUTOLAVADO",
       images: [
-        "/doc/DentalElite/Screenshot 2026-05-07 at 23-15-38 Clínica Dental Osorno - Elite Google AI Studio.png",
-        "/doc/DentalElite/Screenshot 2026-05-07 at 23-15-51 Clínica Dental Osorno - Elite Google AI Studio.png",
-        "/doc/DentalElite/Screenshot 2026-05-07 at 23-16-10 Clínica Dental Osorno - Elite Google AI Studio.png",
-        "/doc/DentalElite/Screenshot 2026-05-07 at 23-16-22 Clínica Dental Osorno - Elite Google AI Studio.png"
+        "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1621905252507-b352175d2f20?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1601362840469-51e4d8d59085?auto=format&fit=crop&q=80&w=1200"
       ]
     },
     {
-      title: "AXIS MODULAR // MUEBLES A MEDIDA",
+      title: "E-COMMERCE // FUNNEL OPTIMIZADO",
       images: [
-        "/doc/AxisModular/Screenshot 2026-05-07 at 23-18-55 AXIS Modular Google AI Studio.png",
-        "/doc/AxisModular/Screenshot 2026-05-07 at 23-19-07 AXIS Modular Google AI Studio.png",
-        "/doc/AxisModular/Screenshot 2026-05-07 at 23-19-29 AXIS Modular Google AI Studio.png",
-        "/doc/AxisModular/Screenshot 2026-05-07 at 23-19-41 AXIS Modular Google AI Studio.png"
+        "https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1454165833767-027eeea15c3e?auto=format&fit=crop&q=80&w=800"
       ]
     },
     {
-      title: "LAGO RANCO // TURISMO INMOBILIARIO",
+      title: "DASHBOARD // ANALÍTICA REALTIME",
       images: [
-        "/doc/LagoRanco/Screenshot 2026-05-07 at 23-25-14 Lago Ranco 2026 Google AI Studio.png",
-        "/doc/LagoRanco/Screenshot 2026-05-07 at 23-25-46 Lago Ranco 2026 Google AI Studio.png",
-        "/doc/LagoRanco/Screenshot 2026-05-07 at 23-26-00 Lago Ranco 2026 Google AI Studio.png",
-        "/doc/LagoRanco/Screenshot 2026-05-07 at 23-26-11 Lago Ranco 2026 Google AI Studio.png"
+        "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
       ]
     }
   ];
@@ -390,44 +390,37 @@ const ContactForm = () => {
   );
 };
 
-const containerVariants: Variants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.3
-    }
-  }
-};
-
-const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
-    y: 0, 
-    transition: { 
-      duration: 0.5, 
-      ease: [0.22, 1, 0.36, 1] as const 
-    } 
-  }
-};
-
-const slamVariants: Variants = {
-  hidden: { scale: 1.5, opacity: 0, y: 50 },
-  visible: { 
-    scale: 1, 
-    opacity: 1, 
-    y: 0, 
-    transition: { 
-      duration: 0.8, 
-      ease: [0.34, 1.56, 0.64, 1] as const 
-    } 
-  }
-};
-
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } }
+  };
+
+  const slamVariants = {
+    hidden: { scale: 1.5, opacity: 0, y: 50 },
+    visible: { 
+      scale: 1, 
+      opacity: 1, 
+      y: 0, 
+      transition: { 
+        duration: 0.8, 
+        ease: [0.34, 1.56, 0.64, 1] 
+      } 
+    }
+  };
 
   return (
     <div className="min-h-screen selection:bg-accent selection:text-bg">
