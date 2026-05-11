@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { motion, useMotionValue, useTransform, useSpring, AnimatePresence } from 'motion/react';
+import { motion, useMotionValue, useTransform, useSpring, AnimatePresence, Variants } from 'motion/react';
 import { Menu, ArrowRight, Github, Twitter, Linkedin, ExternalLink, Mail, X } from 'lucide-react';
 import { useState, useEffect, FormEvent, useRef, MouseEvent } from 'react';
 
@@ -390,37 +390,44 @@ const ContactForm = () => {
   );
 };
 
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.3
+    }
+  }
+};
+
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { 
+      duration: 0.5, 
+      ease: [0.22, 1, 0.36, 1] as const 
+    } 
+  }
+};
+
+const slamVariants: Variants = {
+  hidden: { scale: 1.5, opacity: 0, y: 50 },
+  visible: { 
+    scale: 1, 
+    opacity: 1, 
+    y: 0, 
+    transition: { 
+      duration: 0.8, 
+      ease: [0.34, 1.56, 0.64, 1] as const 
+    } 
+  }
+};
+
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.3
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } }
-  };
-
-  const slamVariants = {
-    hidden: { scale: 1.5, opacity: 0, y: 50 },
-    visible: { 
-      scale: 1, 
-      opacity: 1, 
-      y: 0, 
-      transition: { 
-        duration: 0.8, 
-        ease: [0.34, 1.56, 0.64, 1] 
-      } 
-    }
-  };
 
   return (
     <div className="min-h-screen selection:bg-accent selection:text-bg">
