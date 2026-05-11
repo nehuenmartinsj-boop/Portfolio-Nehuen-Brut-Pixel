@@ -89,7 +89,7 @@ const ProjectCard = ({ title, tags, description }: { title: string; tags: string
   );
 };
 
-const ProjectScreenshotStack = ({ title, images }: { title: string; images: string[] }) => {
+const ProjectScreenshotStack = ({ title, images }: { title: string; images: string[]; key?: any }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Lock body scroll when open
@@ -130,7 +130,7 @@ const ProjectScreenshotStack = ({ title, images }: { title: string; images: stri
                 referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-2 right-2 bg-ink text-bg font-mono text-[8px] px-1 py-0.5">
-                VER.0{i + 1}
+                VER.0{i+1}
               </div>
             </div>
           </motion.div>
@@ -154,7 +154,7 @@ const ProjectScreenshotStack = ({ title, images }: { title: string; images: stri
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               className="max-w-3xl mx-auto flex flex-col gap-12 py-24"
-              onClick={(e: MouseEvent) => e.stopPropagation()}
+              onClick={(e) => e.stopPropagation()}
             >
               <div className="flex flex-col items-center gap-4 mb-8">
                 <h2 className="font-mono text-xl uppercase tracking-widest text-ink">{title}</h2>
@@ -176,7 +176,7 @@ const ProjectScreenshotStack = ({ title, images }: { title: string; images: stri
                     referrerPolicy="no-referrer"
                   />
                   <div className="flex justify-between items-center mt-4 px-2">
-                    <span className="font-mono text-[10px] opacity-40 uppercase">Captura de Transmisión // 0{i + 1}</span>
+                    <span className="font-mono text-[10px] opacity-40 uppercase">Captura de Transmisión // 0{i+1}</span>
                     <span className="font-mono text-[10px] text-accent uppercase">OK.STATUS</span>
                   </div>
                 </motion.div>
@@ -208,47 +208,30 @@ const ProjectScreenshotStack = ({ title, images }: { title: string; images: stri
 const ProjectGallery = () => {
   const projects = [
     {
-      title: "BRILLO SUREÑO // AUTOLAVADO",
+      title: "OSORNO WASH // AUTOLAVADO",
       images: [
-        "/img/OsornoWash/Screenshot 2026-05-07 at 23-08-32 Brillo Sureño - Autolavado Oso Google AI Studio.png",
-        "/img/OsornoWash/Screenshot 2026-05-07 at 23-09-50 Brillo Sureño - Autolavado Oso Google AI Studio.png",
-        "/img/OsornoWash/Screenshot 2026-05-07 at 23-10-10 Brillo Sureño - Autolavado Oso Google AI Studio.png"
+        "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1621905252507-b352175d2f20?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1601362840469-51e4d8d59085?auto=format&fit=crop&q=80&w=1200"
       ]
     },
     {
-      title: "DENTAL ELITE // CLÍNICA DENTAL",
+      title: "E-COMMERCE // FUNNEL OPTIMIZADO",
       images: [
-        "/img/DentalElite/Screenshot 2026-05-07 at 23-15-38 Clínica Dental Osorno - Elite Google AI Studio.png",
-        "/img/DentalElite/Screenshot 2026-05-07 at 23-15-51 Clínica Dental Osorno - Elite Google AI Studio.png",
-        "/img/DentalElite/Screenshot 2026-05-07 at 23-16-10 Clínica Dental Osorno - Elite Google AI Studio.png",
-        "/img/DentalElite/Screenshot 2026-05-07 at 23-16-22 Clínica Dental Osorno - Elite Google AI Studio.png"
+        "https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1454165833767-027eeea15c3e?auto=format&fit=crop&q=80&w=800"
       ]
     },
     {
-      title: "AXIS MODULAR // ARQUITECTURA",
+      title: "DASHBOARD // ANALÍTICA REALTIME",
       images: [
-        "/img/AxisModular/Screenshot 2026-05-07 at 23-18-55 AXIS Modular Google AI Studio.png",
-        "/img/AxisModular/Screenshot 2026-05-07 at 23-19-07 AXIS Modular Google AI Studio.png",
-        "/img/AxisModular/Screenshot 2026-05-07 at 23-19-29 AXIS Modular Google AI Studio.png",
-        "/img/AxisModular/Screenshot 2026-05-07 at 23-19-41 AXIS Modular Google AI Studio.png"
-      ]
-    },
-    {
-      title: "VETORA // CUIDADO HOLÍSTICO",
-      images: [
-        "/img/Vetora/Screenshot 2026-05-07 at 23-21-38 Vetora Cuidado Holístico Google AI Studio.png",
-        "/img/Vetora/Screenshot 2026-05-07 at 23-21-45 Vetora Cuidado Holístico Google AI Studio.png",
-        "/img/Vetora/Screenshot 2026-05-07 at 23-21-53 Vetora Cuidado Holístico Google AI Studio.png",
-        "/img/Vetora/Screenshot 2026-05-07 at 23-22-15 Vetora Cuidado Holístico Google AI Studio.png"
-      ]
-    },
-    {
-      title: "LAGO RANCO // TURISMO",
-      images: [
-        "/img/LagoRanco/Screenshot 2026-05-07 at 23-25-14 Lago Ranco 2026 Google AI Studio.png",
-        "/img/LagoRanco/Screenshot 2026-05-07 at 23-25-46 Lago Ranco 2026 Google AI Studio.png",
-        "/img/LagoRanco/Screenshot 2026-05-07 at 23-26-00 Lago Ranco 2026 Google AI Studio.png",
-        "/img/LagoRanco/Screenshot 2026-05-07 at 23-26-11 Lago Ranco 2026 Google AI Studio.png"
+        "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
       ]
     }
   ];
@@ -523,29 +506,29 @@ export default function App() {
           <SectionHeading number="01" title="SOLUCIONES FUNCIONALES" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard 
-              title="BRILLO SUREÑO // AUTOLAVADO" 
-              tags={["Web", "SEO", "Vite"]}
-              description="Plataforma para autolavado con enfoque en conversión y optimización SEO local para captación de clientes."
+              title="MOTOR DE CRECIMIENTO SEO" 
+              tags={["SEO", "Vite", "JS"]}
+              description="Optimización estructural y funnel de captación de leads con integración de Google Sheets para gestión automática de contactos."
             />
             <ProjectCard 
-              title="DENTAL ELITE // CLÍNICA" 
-              tags={["Health", "React", "Forms"]}
-              description="Sistema de gestión y aterrizaje para clínica dental, optimizado para agendamiento y retención de pacientes."
+              title="FUNNEL DE VENTAS PRO" 
+              tags={["Funnel", "React", "Forms"]}
+              description="Embudo de ventas diseñado para máxima conversión, con seguimiento de métricas y automatización de respuestas."
             />
             <ProjectCard 
-              title="AXIS MODULAR // ARQUITECTURA" 
-              tags={["B2B", "Portfolio", "Design"]}
-              description="Catálogo digital de estructuras modulares con visualización de alta calidad y funnel de presupuesto."
+              title="TABLERO DE DATOS" 
+              tags={["Python", "Sheets", "D3"]}
+              description="Visualización interactiva de KPIs de negocio, conectada directamente a tu Google Sheets para reportes en tiempo real."
             />
              <ProjectCard 
-              title="VETORA // CUIDADO HOLÍSTICO" 
-              tags={["Wellness", "Landing", "SEO"]}
-              description="Ecosistema digital para servicios de salud holística, integrando blog y captación de leads estratégicos."
+              title="ECOSISTEMA CLOUD" 
+              tags={["Firebase", "Stitch", "Auth"]}
+              description="Infraestructura completa en Google Cloud, integrando múltiples servicios para una gestión centralizada y segura."
             />
             <ProjectCard 
-              title="LAGO RANCO // TURISMO" 
-              tags={["Travel", "Landing", "UX"]}
-              description="Landing page de alto impacto para destino turístico, enfocada en la experiencia visual y conversión directa."
+              title="LANDING DE ALTA CONVERSIÓN" 
+              tags={["CTA", "SEO", "React"]}
+              description="Draft de landing page enfocada 100% en el usuario final, con CTAs claros y optimizada para buscadores."
             />
             <ProjectCard 
               title="SISTEMA DE GESTIÓN" 
